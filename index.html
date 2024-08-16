@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="css/icomoon.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
     <nav
       class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target"
@@ -55,7 +56,9 @@
               <a href="#about-section" class="nav-link"><span>About</span></a>
             </li>
             <li class="nav-item">
-              <a href="#resume-section" class="nav-link"><span>Experiences</span></a>
+              <a href="#resume-section" class="nav-link"
+                ><span>Experiences</span></a
+              >
             </li>
             <li class="nav-item">
               <a href="#services-section" class="nav-link"
@@ -71,7 +74,9 @@
               >
             </li>
             <li class="nav-item">
-              <a href="#blog-section" class="nav-link"><span>Honors and Awards</span></a>
+              <a href="#blog-section" class="nav-link"
+                ><span>Honors and Awards</span></a
+              >
             </li>
             <li class="nav-item">
               <a href="#contact-section" class="nav-link"
@@ -479,7 +484,8 @@
             <h1 class="big big-2">Projects</h1>
             <h2 class="mb-4">My Projects</h2>
             <p>
-              Projects I have done so far in the fields of technology and consulting
+              Projects I have done so far in the fields of technology and
+              consulting
             </p>
           </div>
         </div>
@@ -488,11 +494,12 @@
             <div
               class="project img ftco-animate d-flex justify-content-center align-items-center"
               style="background-image: url(images/project-4.jpg)"
+              onclick="openLightbox();currentSlide(1)"
             >
               <div class="overlay"></div>
               <div class="text text-center p-4">
-                <h3><a href="#">Branding &amp; Illustration Design</a></h3>
-                <span>Web Design</span>
+                <h3><a href="#">ClubLens</a></h3>
+                <span>Click to know more</span>
               </div>
             </div>
           </div>
@@ -500,11 +507,12 @@
             <div
               class="project img ftco-animate d-flex justify-content-center align-items-center"
               style="background-image: url(images/project-5.jpg)"
+              onclick="openLightbox();currentSlide(2)"
             >
               <div class="overlay"></div>
               <div class="text text-center p-4">
-                <h3><a href="#">Branding &amp; Illustration Design</a></h3>
-                <span>Web Design</span>
+                <h3><a href="#">FriendLink</a></h3>
+                <span>Click to know more</span>
               </div>
             </div>
           </div>
@@ -513,22 +521,24 @@
             <div
               class="project img ftco-animate d-flex justify-content-center align-items-center"
               style="background-image: url(images/project-1.jpg)"
+              onclick="openLightbox();currentSlide(3)"
             >
               <div class="overlay"></div>
               <div class="text text-center p-4">
-                <h3><a href="#">Branding &amp; Illustration Design</a></h3>
-                <span>Web Design</span>
+                <h3><a href="#">CrownTrade</a></h3>
+                <span>Click to know more</span>
               </div>
             </div>
 
             <div
               class="project img ftco-animate d-flex justify-content-center align-items-center"
               style="background-image: url(images/project-6.jpg)"
+              onclick="openLightbox();currentSlide(4)"
             >
               <div class="overlay"></div>
               <div class="text text-center p-4">
-                <h3><a href="#">Branding &amp; Illustration Design</a></h3>
-                <span>Web Design</span>
+                <h3><a href="#">Games</a></h3>
+                <span>Click to know more</span>
               </div>
             </div>
           </div>
@@ -538,11 +548,12 @@
                 <div
                   class="project img ftco-animate d-flex justify-content-center align-items-center"
                   style="background-image: url(images/project-2.jpg)"
+                  onclick="openLightbox();currentSlide(5)"
                 >
                   <div class="overlay"></div>
                   <div class="text text-center p-4">
-                    <h3><a href="#">Branding &amp; Illustration Design</a></h3>
-                    <span>Web Design</span>
+                    <h3><a href="#">Deloitte Consulting Project</a></h3>
+                    <span>Click to know more</span>
                   </div>
                 </div>
               </div>
@@ -550,16 +561,329 @@
                 <div
                   class="project img ftco-animate d-flex justify-content-center align-items-center"
                   style="background-image: url(images/project-3.jpg)"
+                  onclick="openLightbox();currentSlide(6)"
                 >
                   <div class="overlay"></div>
                   <div class="text text-center p-4">
-                    <h3><a href="#">Branding &amp; Illustration Design</a></h3>
-                    <span>Web Design</span>
+                    <h3><a href="#">Chanikya Cement Products</a></h3>
+                    <span>Click to know more</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div id="lightbox" class="lightbox">
+        <!-- Close Button -->
+        <span class="close" onclick="closeLightbox()">&times;</span>
+
+        <!-- Lightbox Content -->
+        <div class="lightbox-content">
+          <!-- Slide 1 -->
+          <div class="mySlides">
+            <img
+              src="fullsize-image1.jpg"
+              alt="Full Size Image"
+              class="lightbox-image"
+            />
+            <div class="total-project-details-box">
+              <div class="project-details">
+                <h2>ClubLens</h2>
+                <p>
+                  <strong>Technologies Used:</strong> Python, HTML/CSS,
+                  JavaScript
+                </p>
+                <p><strong>Date:</strong> Nov 2023 – Nov 2023</p>
+                <p><strong>Description:</strong></p>
+                <p>
+                  ClubLens is an AI-driven tool designed to help users
+                  efficiently filter and discover clubs that match their
+                  interests. The project combined data visualization techniques
+                  with AI algorithms to provide personalized club
+                  recommendations.
+                </p>
+                <p><strong>Key Contributions:</strong></p>
+                <ul>
+                  <li>
+                    Designed the algorithm to filter clubs based on user preferences and activity history.
+                  </li>
+                  <li>
+                    Implemented the front-end using HTML and CSS, focusing on a clean and user-friendly interface.
+                  </li>
+                  <li>
+                    Used Python for data processing and AI model implementation, ensuring accurate and relevant club suggestions.
+                  </li>
+                </ul>
+                <p><strong>Visuals:</strong></p>
+                <div class="visuals">
+                  <img
+                    src="screenshot1.jpg"
+                    alt="Website Interface Screenshot"
+                  />
+                  <img src="chart.jpg" alt="Prediction Model Chart" />
+                </div>
+                <p>
+                  <strong>Link:</strong>
+                  <a href="https://github.com/your-repo" target="_blank"
+                    >GitHub Repository</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add more slides as needed -->
+          <div class="mySlides">
+            <img
+              src="fullsize-image2.jpg"
+              alt="Full Size Image"
+              class="lightbox-image"
+            />
+            <div class="total-project-details-box">
+              <div class="project-details">
+                <h2>Snake Game</h2>
+                <p>
+                  <strong>Technologies Used:</strong> PyTorch, C, JavaScript
+                </p>
+                <p><strong>Date:</strong> Dec 2023 – Jan 2024</p>
+                <p><strong>Description:</strong></p>
+                <p>
+                  This project involved recreating the classic Snake game and enhancing it with an AI model using Reinforcement Learning. The AI was trained to play the game using PyTorch, with the core game mechanics implemented in C and JavaScript.
+                </p>
+                <p><strong>Key Contributions:</strong></p>
+                <ul>
+                  <li>
+                    Developed the game logic using C, ensuring smooth gameplay and accurate collision detection.
+                  </li>
+                  <li>
+                    Integrated PyTorch for training the AI, allowing it to learn and improve its performance over time.
+                  </li>
+                  <li>
+                    Used JavaScript to handle the game's graphics and user input, making the game accessible via a web browser.
+                  </li>
+                </ul>
+                <p><strong>Visuals:</strong></p>
+                <div class="visuals">
+                  <img
+                    src="screenshot1.jpg"
+                    alt="Website Interface Screenshot"
+                  />
+                  <img src="chart.jpg" alt="Prediction Model Chart" />
+                </div>
+                <p>
+                  <strong>Link:</strong>
+                  <a href="https://github.com/your-repo" target="_blank"
+                    >GitHub Repository</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mySlides">
+            <img
+              src="fullsize-image2.jpg"
+              alt="Full Size Image"
+              class="lightbox-image"
+            />
+            <div class="total-project-details-box">
+              <div class="project-details">
+                <h2>CrownTrade</h2>
+                <p>
+                  <strong>Technologies Used:</strong> React.js, HTML, CSS,
+                  Python
+                </p>
+                <p><strong>Date:</strong> Aug 2023 – Dec 2023</p>
+                <p><strong>Description:</strong></p>
+                <p>
+                  CrownTrade is a stock forecasting website developed to help
+                  users predict stock prices and make informed investment
+                  decisions. The project involved extensive use of Python for
+                  data scraping and analysis, while React.js, HTML, and CSS were
+                  used to create a dynamic and responsive front-end.
+                </p>
+                <p><strong>Key Contributions:</strong></p>
+                <ul>
+                  <li>
+                    Worked collaboratively in a team of four to develop the
+                    front-end using React.js, ensuring a seamless user
+                    experience.
+                  </li>
+                  <li>
+                    Implemented Python scripts to scrape financial data from
+                    various sources and process it for predictive modeling.
+                  </li>
+                  <li>
+                    Designed and styled the website's interface to be both
+                    user-friendly and visually appealing.
+                  </li>
+                </ul>
+                <p><strong>Visuals:</strong></p>
+                <div class="visuals">
+                  <img
+                    src="screenshot1.jpg"
+                    alt="Website Interface Screenshot"
+                  />
+                  <img src="chart.jpg" alt="Prediction Model Chart" />
+                </div>
+                <p>
+                  <strong>Link:</strong>
+                  <a href="https://github.com/your-repo" target="_blank"
+                    >GitHub Repository</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mySlides">
+            <img
+              src="fullsize-image2.jpg"
+              alt="Full Size Image"
+              class="lightbox-image"
+            />
+            <div class="total-project-details-box">
+              <div class="project-details">
+                <h2>FriendLink</h2>
+                <p>
+                  <strong>Technologies Used:</strong> Java, Python, HTML, CSS, JavaScript
+                </p>
+                <p><strong>Date:</strong> May 2024 – Present</p>
+                <p><strong>Description:</strong></p>
+                <p>
+                  FriendLink is an innovative application designed to help users build and maintain friendships through location-based features. The app leverages React Native Maps for real-time friend discovery and interactive mapping, providing users with a seamless way to connect with others based on their location.
+                </p>
+                <p><strong>Key Contributions:</strong></p>
+                <ul>
+                  <li>
+                    Designed and implemented the user interface using HTML and CSS, ensuring a responsive and intuitive design.
+                  </li>
+                  <li>
+                    Integrated React Native Maps for accurate and real-time location tracking.
+                  </li>
+                  <li>
+                    Developed the backend logic using Java and Python to manage user data, friend connections, and location services.
+                  </li>
+                </ul>
+                <p><strong>Visuals:</strong></p>
+                <div class="visuals">
+                  <img
+                    src="screenshot1.jpg"
+                    alt="Website Interface Screenshot"
+                  />
+                  <img src="chart.jpg" alt="Prediction Model Chart" />
+                </div>
+                <p>
+                  <strong>Link:</strong>
+                  <a href="https://github.com/your-repo" target="_blank"
+                    >GitHub Repository</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mySlides">
+            <img
+              src="fullsize-image2.jpg"
+              alt="Full Size Image"
+              class="lightbox-image"
+            />
+            <div class="total-project-details-box">
+              <div class="project-details">
+                <h2>Deloitte Consulting Project</h2>
+                <p>
+                  <strong>Technologies Used:</strong> Market Research, Data Analysis, Data Prediction
+                </p>
+                <p><strong>Date:</strong> Mar 2024 - Mar 2024</p>
+                <p><strong>Description:</strong></p>
+                <p>
+                  In collaboration with Deloitte, this project involved creating a comprehensive 5-year timeline for a cafe, focusing on marketing, investment, infrastructure, technology, and data collection. The project required extensive market research and data analysis to develop accurate and actionable insights.
+                </p>
+                <p><strong>Key Contributions:</strong></p>
+                <ul>
+                  <li>
+                    Conducted in-depth market research to identify trends and opportunities in the cafe industry.
+                  </li>
+                  <li>
+                    Developed data-driven predictions to guide investment and marketing strategies over the next five years.
+                  </li>
+                  <li>
+                    Created a detailed project timeline, integrating insights from various aspects of the business.
+                  </li>
+                </ul>
+                <p><strong>Visuals:</strong></p>
+                <div class="visuals">
+                  <img
+                    src="screenshot1.jpg"
+                    alt="Website Interface Screenshot"
+                  />
+                  <img src="chart.jpg" alt="Prediction Model Chart" />
+                </div>
+                <p>
+                  <strong>Link:</strong>
+                  <a href="https://github.com/your-repo" target="_blank"
+                    >GitHub Repository</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mySlides">
+            <img
+              src="fullsize-image2.jpg"
+              alt="Full Size Image"
+              class="lightbox-image"
+            />
+            <div class="total-project-details-box">
+              <div class="project-details">
+                <h2>Chanikya Cement Product</h2>
+                <p>
+                  <strong>Technologies Used:</strong> HTML/CSS, Js, Firebase
+                </p>
+                <p><strong>Date:</strong> Jun 2024 - Jul 2024</p>
+                <p><strong>Description:</strong></p>
+                <p>
+                  Designed and coded a website for a local business.
+                </p>
+                <p><strong>Key Contributions:</strong></p>
+                <ul>
+                  <li>
+                    Designed a website for a local cement manufacturing business on Figma and coded it using HTML, CSS and Js.
+                  </li>
+                  <li>
+                    Added animations to make it visually appealing and interesting. Photagraphed required photos for the website as well.
+                  </li>
+                  <li>
+                    Made the website user-friendly and connected it to email of the business owner.
+                  </li>
+                  <li>
+                    Made sure that it is easy enough to operate and add stuff by the owner.
+                  </li>
+                </ul>
+                <p><strong>Visuals:</strong></p>
+                <div class="visuals">
+                  <img
+                    src="screenshot1.jpg"
+                    alt="Website Interface Screenshot"
+                  />
+                  <img src="chart.jpg" alt="Prediction Model Chart" />
+                </div>
+                <p>
+                  <strong>Link:</strong>
+                  <a href="https://github.com/your-repo" target="_blank"
+                    >GitHub Repository</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Next/Previous Controls -->
+          <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+          <a class="next" onclick="changeSlide(1)">&#10095;</a>
         </div>
       </div>
     </section>
@@ -570,9 +894,7 @@
           <div class="col-md-7 heading-section text-center ftco-animate">
             <h1 class="big big-2">Honors and Awards</h1>
             <h2 class="mb-4">Honors and Awards</h2>
-            <p>
-              Achievements I have accomplished so far.
-            </p>
+            <p>Achievements I have accomplished so far.</p>
           </div>
         </div>
         <div class="row d-flex">
@@ -678,9 +1000,7 @@
         <div class="row justify-content-center">
           <div class="col-md-7 ftco-animate text-center">
             <h2>I'm <span>Available</span> for freelancing</h2>
-            <p>
-              
-            </p>
+            <p></p>
             <p class="mb-0">
               <a href="#" class="btn btn-primary py-3 px-5">Hire me</a>
             </p>
@@ -700,55 +1020,49 @@
             <h2 class="mb-4">Contact Me</h2>
           </div>
         </div>
+      </div>
 
+      <div class="row no-gutters block-9">
+        <div class="col-md-6 order-md-last d-flex">
+          <form action="#" class="bg-light p-4 p-md-5 contact-form">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Your Name" />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Your Email"
+              />
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Subject" />
+            </div>
+            <div class="form-group">
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="7"
+                class="form-control"
+                placeholder="Message"
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <input
+                type="submit"
+                value="Send Message"
+                class="btn btn-primary py-3 px-5"
+              />
+            </div>
+          </form>
         </div>
 
-        <div class="row no-gutters block-9">
-          <div class="col-md-6 order-md-last d-flex">
-            <form action="#" class="bg-light p-4 p-md-5 contact-form">
-              <div class="form-group">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Your Name"
-                />
-              </div>
-              <div class="form-group">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Your Email"
-                />
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Subject" />
-              </div>
-              <div class="form-group">
-                <textarea
-                  name=""
-                  id=""
-                  cols="30"
-                  rows="7"
-                  class="form-control"
-                  placeholder="Message"
-                ></textarea>
-              </div>
-              <div class="form-group">
-                <input
-                  type="submit"
-                  value="Send Message"
-                  class="btn btn-primary py-3 px-5"
-                />
-              </div>
-            </form>
-          </div>
-
-          <div class="col-md-6 d-flex">
-            <div
-              class="img"
-              style="background-image: url(images/about.png)"
-            ></div>
-          </div>
+        <div class="col-md-6 d-flex">
+          <div
+            class="img"
+            style="background-image: url(images/about.png)"
+          ></div>
         </div>
       </div>
     </section>
@@ -760,7 +1074,8 @@
             <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">About</h2>
               <p>
-                Reach out to me to talk more about technology and tech opportunities!
+                Reach out to me to talk more about technology and tech
+                opportunities!
               </p>
               <ul
                 class="ftco-footer-social list-unstyled float-md-left float-lft mt-5"
@@ -793,7 +1108,8 @@
                 </li>
                 <li>
                   <a href="#"
-                    ><span class="icon-long-arrow-right mr-2"></span>Experiences</a
+                    ><span class="icon-long-arrow-right mr-2"></span
+                    >Experiences</a
                   >
                 </li>
                 <li>
@@ -816,9 +1132,7 @@
                 <ul>
                   <li>
                     <span class="icon icon-map-marker"></span
-                    ><span class="text"
-                      >Champaign, 61820, Illinois</span
-                    >
+                    ><span class="text">Champaign, 61820, Illinois</span>
                   </li>
                   <li>
                     <a href="#"
@@ -835,7 +1149,7 @@
           <div class="col-md-12 text-center">
             <p>
               <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-              
+
               <i class="icon-heart color-danger" aria-hidden="true"></i>
               <a href="https://colorlib.com" target="_blank"></a>
               <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
